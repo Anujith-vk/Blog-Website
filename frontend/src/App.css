@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('./canva-brown-aesthetic-vision-board-autumn-photo-collage-desktop-wallpaper-T3TgoGCk24Q.jpg');
+  background-size: cover;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  height: 100vh;
+}
+h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+.register-div {
+  width: 100%; 
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.formclass {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formdiv {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 100%; 
+  padding-left: 4%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 40px; 
+}
+.bu {
+  width: 100%; 
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: medium;
+  padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+.bu:hover {
+  background-color: rgba(255, 255, 255, 0.3); 
+}
+.main-content {
+  width: 100%;
+  max-width: 400px; 
+  padding: 20px; 
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+input {
+  width: 100%; 
+  padding-left: 4%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: 40px; 
+}

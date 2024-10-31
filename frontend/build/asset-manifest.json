@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.62ee6636.css",
+    "main.js": "/static/js/main.62a98635.js",
+    "static/media/canva-brown-aesthetic-vision-board-autumn-photo-collage-desktop-wallpaper-T3TgoGCk24Q.jpg": "/static/media/canva-brown-aesthetic-vision-board-autumn-photo-collage-desktop-wallpaper-T3TgoGCk24Q.ecab3aa989f4ed679df4.jpg",
+    "static/media/aesthetic-computer-4k-c9qdhe02pr84wh3a.jpg": "/static/media/aesthetic-computer-4k-c9qdhe02pr84wh3a.070e6a93c1be8c8686bf.jpg",
+    "static/media/logo.jpg": "/static/media/logo.ea47157f139f34692b1b.jpg",
+    "index.html": "/index.html",
+    "main.62ee6636.css.map": "/static/css/main.62ee6636.css.map",
+    "main.62a98635.js.map": "/static/js/main.62a98635.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62ee6636.css",
+    "static/js/main.62a98635.js"
+  ]
+}
