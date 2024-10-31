@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../Pages/Createblog.css'
 import { ToastContainer } from 'react-toastify'
-import { handleerror } from '../Toast'
+import { handleerror, handlesuccess } from '../Toast'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
@@ -39,11 +39,10 @@ const Createblog = () => {
       
       if(response)
       {
-       
-        localStorage.setItem('message',response.data.message)
+        handlesuccess(response.data.message)
         setTimeout(() => {
           navigate('/home')
-        },100);
+        },1000);
       }
     } catch (error) {
       if(error.response)

@@ -3,9 +3,13 @@ import '../Pages/Myblogs.css';
 import axios from 'axios';
 import { handleerror, handlesuccess } from '../Toast';
 import { ToastContainer } from 'react-toastify';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
+
 
 const Myblogs = () => {
+
+  const navigate=useNavigate()
   const [blogs, setblogs] = useState([]);
   const [error, setError] = useState(null);
 
@@ -19,7 +23,8 @@ const Myblogs = () => {
       });
       if (response) {
         handlesuccess(response.data.message);
-        fetchBlogs();
+        setblogs((prevBlogs) => prevBlogs.filter((blog) => blog._id !== id));
+        navigate('/home')
       }
     } catch (error) {
       if (error.response) {
