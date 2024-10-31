@@ -23,7 +23,7 @@ const Myblogs = () => {
       });
       if (response) {
         handlesuccess(response.data.message);
-        setblogs(blogs.filter((blog)=>blog.id!==id));
+        setblogs(blogs.filter((blog)=>blog._id!==id));
       }
     } catch (error) {
       if (error.response) {
