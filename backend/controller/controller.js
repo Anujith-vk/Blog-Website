@@ -99,7 +99,7 @@ const ShowAllBlog=async function (req,res) {
         const blogs=await posts.find({})
         return res.status(200).json({blogs:blogs})
     } catch (error) {
-        return res.status(500).json({message:"Unexpected Error Occured",error:error.message})
+        return res.status(500).json({message:"Unexpected Error Occured try again",error:error.message})
     }
 }
 
