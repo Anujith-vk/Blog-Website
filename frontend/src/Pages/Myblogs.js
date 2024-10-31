@@ -15,7 +15,7 @@ const Myblogs = () => {
       if (!token) {
         return handleerror("No token provided");
       }
-      const response = await axios.delete(`http://localhost:2000/Blog/Delete/${id}`, {headers: { Authorization: `Bearer ${token}` }
+      const response = await axios.delete(`https://blog-website-backend-qyib.onrender.com/Blog/Delete/${id}`, {headers: { Authorization: `Bearer ${token}` }
       });
       if (response) {
         handlesuccess(response.data.message);
@@ -36,7 +36,7 @@ const Myblogs = () => {
       return handleerror("No token provided");
     }
     try {
-      const response = await axios.get('http://localhost:2000/Blogs/user', {
+      const response = await axios.get('https://blog-website-backend-qyib.onrender.com/Blogs/user', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setblogs(response.data.results);

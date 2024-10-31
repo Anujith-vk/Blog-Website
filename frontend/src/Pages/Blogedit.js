@@ -17,7 +17,7 @@ const navigate=useNavigate()
                 if (!token) {
                     return handleerror("No token provided");
                 }
-                const response = await axios.get(`http://localhost:2000/Get/post/${id}`, {
+                const response = await axios.get(`https://blog-website-backend-qyib.onrender.com/Get/post/${id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 if (response.data.post) {
@@ -51,7 +51,7 @@ const navigate=useNavigate()
             return handleerror('No token provided');
         }
         try {
-            const response = await axios.put(`http://localhost:2000/Blog/Update/${id}`, { title, content }, { headers: { Authorization: `Bearer ${token}` }});
+            const response = await axios.put(`https://blog-website-backend-qyib.onrender.com/Blog/Update/${id}`, { title, content }, { headers: { Authorization: `Bearer ${token}` }});
             if(response)
             {
                 localStorage.setItem('message',response.data.message)

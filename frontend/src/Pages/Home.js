@@ -24,7 +24,7 @@ const fetchdata=async function (req,res) {
     }, 1000);
   }
   try {
-    const response=await axios.get('http://localhost:2000/Blog/Display',{headers:{Authorization:`Bearer ${token}`}})
+    const response=await axios.get('https://blog-website-backend-qyib.onrender.com/Blog/Display',{headers:{Authorization:`Bearer ${token}`}})
   if(response)
   {
     setblogs(response.data.blogs)
