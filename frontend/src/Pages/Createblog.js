@@ -34,7 +34,7 @@ const Createblog = () => {
       {
         navigate('/login')
       }
-      const response = await axios.post("https://blog-website-backend-qyib.onrender.com/Create/blog",{ author, title, content },{ headers: { Authorization: `Bearer ${token}` } }
+      const response = await axios.post("http://localhost:2000/Create/blog",{ author, title, content },{ headers: { Authorization: `Bearer ${token}` } }
       );
       
       if(response)

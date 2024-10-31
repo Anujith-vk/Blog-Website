@@ -28,7 +28,7 @@ const Register = () => {
            return handleerror("All Feilds Are Required")
          }
          try {
-            const response=await  axios.post('https://blog-website-backend-qyib.onrender.com/Register',{name,phone,email,password})
+            const response=await  axios.post('http://localhost:2000/Register',{name,phone,email,password})
             if(response)
             {
                handlesuccess(response.data.message)

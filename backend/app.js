@@ -2,7 +2,7 @@ const express=require('express')
 const app=express()
 require('dotenv').config()
 const mongoose=require('./database/db')
-const port=process.env.port || 4000
+const port=process.env.port||4000;
 const Route=require('./Routes/Route')
 const cors=require('cors')
 
@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 app.use(cors(
     {
-        origin:'https://blog-website-1-4svg.onrender.com',
+        origin:process.env.frontend_url,
         allowedHeaders:['GET','PUT','POST','DELETE']
     }
 ))
