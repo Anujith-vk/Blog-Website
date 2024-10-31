@@ -23,8 +23,7 @@ const Myblogs = () => {
       });
       if (response) {
         handlesuccess(response.data.message);
-        setblogs((prevBlogs) => prevBlogs.filter((blog) => blog._id !== id));
-        navigate('/home')
+        setblogs(blogs.filter((blog)=>blog.id!==id));
       }
     } catch (error) {
       if (error.response) {

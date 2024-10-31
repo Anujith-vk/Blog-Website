@@ -27,7 +27,7 @@ const fetchdata=async function (req,res) {
     const response=await axios.get('https://blog-website-hhnu.onrender.com/Blog/Display',{headers:{Authorization:`Bearer ${token}`}})
   if(response)
   {
-    setblogs(response.data.blogs)
+   return setblogs(response.data.blogs)
   }
   } catch (error) {
     handleerror(error.response.data.message)
