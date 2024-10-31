@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 app.use(cors(
     {
-        origin:process.env.frontend_url,
+        origin: 'https://blog-website-frontend-p34u.onrender.com',
         allowedHeaders:['GET','PUT','POST','DELETE']
     }
 ))
