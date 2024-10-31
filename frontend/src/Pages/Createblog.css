@@ -61,3 +61,12 @@
   .but> button:hover{
     background-color: rgba(255, 255, 255, 0.3); 
   }
+
+  @media (max-width:700px) {
+    .contentspace{
+      height: 50vh;
+    }
+    .but > button{
+      margin: 10px;
+    }
+  }
