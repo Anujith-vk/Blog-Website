@@ -44,7 +44,7 @@ const navigate=useNavigate()
         e.preventDefault();
         const { title, content } = blog;
         if (!title || !content) {
-            return handleerror("All fields are required");
+            return handleerror("All fields are required !!");
         }
         const token = localStorage.getItem('token');
         if (!token) {
